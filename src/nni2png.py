@@ -23,10 +23,12 @@ def save_nii_slice(filepath):
         print(fname, 'is sliced ')
 
 
-main_path = 'E:\\work\\data\\Task02_Heart'
+main_path = 'C:/Users/84531/Desktop/dataset'
 dirs = os.listdir(main_path)
+print("dirs is :", dirs)
+print("main_path is :", main_path)
 for dirname in dirs:
     abs_dirname = os.path.join(main_path, dirname)
     if os.path.isdir(abs_dirname):
-        print(abs_dirname)
+        print("abs_dirname is :", abs_dirname)
         save_nii_slice(abs_dirname)
